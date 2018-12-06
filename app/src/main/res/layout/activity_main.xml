@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar"/>
+
+    <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#fff">
+    </FrameLayout>
+    <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+    >
+
+        <RadioButton
+                android:paddingTop="5dp"
+                android:id="@+id/rb_Okhttp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:button="@null"
+                android:background="@drawable/tab_menu_bg"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/rb_okhttp"
+                android:gravity="center"
+                android:textColor="#2b2b2b"
+                android:text="OkHttp"/>
+
+        <RadioButton
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:id="@+id/rb_Retrofit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_menu_bg"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/rb_retrofit"
+                android:gravity="center"
+                android:textColor="#2b2b2b"
+                android:text="Retrofit"/>
+
+    </RadioGroup>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F2F2F2"
+    />
+
+</LinearLayout>

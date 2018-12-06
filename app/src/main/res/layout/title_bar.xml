@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:background="#2b7dad"/>
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            app:navigationIcon="@mipmap/return_icon_btn"
+            android:background="#2B7DAD">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="标题"
+                android:id="@+id/tb_title"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>
